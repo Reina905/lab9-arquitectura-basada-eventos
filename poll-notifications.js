@@ -1,7 +1,7 @@
 const { SQSClient, ReceiveMessageCommand, DeleteMessageCommand } = require('@aws-sdk/client-sqs'); 
   
 const REGION = 'us-east-1'; 
-const QUEUE_URL = 'PEGAR_ _notifications_queue_url'; 
+const QUEUE_URL = 'https://sqs.us-east-1.amazonaws.com/511949652182/devsecops-lab-notifications-queue'; 
   
 const client = new SQSClient({ region: REGION }); 
   
